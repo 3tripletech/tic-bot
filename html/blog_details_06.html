@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=Kanit:400,300&subset=thai,latin' rel='stylesheet' type='text/css'>
+		<title>TIC BOT</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+		<meta name="viewport" content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui" />
+
+		<meta name="theme-color" content="#4285F4" />
+		<meta name="msapplication-navbutton-color" content="#4285F4" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#4285F4" />
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="img/ticbot final 1-01.png">
+		<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+		<!-- Critical styles
+		================================================== -->
+		<link rel="stylesheet" href="css/critical.min.css" type="text/css">
+
+		<!-- Load google font
+		================================================== -->
+		<script type="text/javascript">
+			WebFontConfig = {
+				google: { families: [ 'Nunito+Sans:400,400i,700,700i,800,800i,900,900i', 'Quicksand:300,400,700'] }
+			};
+			(function() {
+				var wf = document.createElement('script');
+				wf.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+				wf.type = 'text/javascript';
+				wf.async = 'true';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(wf, s);
+			})();
+		</script>
+
+		<!-- Load other scripts
+		================================================== -->
+		<script type="text/javascript">
+			var _html = document.documentElement,
+				isTouch = (('ontouchstart' in _html) || (navigator.msMaxTouchPoints > 0) || (navigator.maxTouchPoints));
+
+			_html.className = _html.className.replace("no-js","js");
+			_html.classList.add( isTouch ? "touch" : "no-touch");
+		</script>
+		<script type="text/javascript" src="js/device.min.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<!-- start header -->
+			<header id="top-bar" class="top-bar top-bar--dark" data-nav-anchor="true">
+				<div class="top-bar__inner">
+					<div class="container-fluid">
+						<div class="row align-items-center no-gutters">
+
+							<a class="top-bar__logo site-logo" href="index.html">
+								<img class="img-fluid"  src="https://www.tic-bot.com/images/ticbot_final_h1r.png" width="150" height="150"alt="logo"> </a>
+
+							
+
+							<a id="top-bar__navigation-toggler" class="top-bar__navigation-toggler" href="javascript:void(0);">
+								<span></span>
+							</a>
+
+							<div class="top-bar__collapse">
+								
+								<nav id="top-bar__navigation" class="top-bar__navigation" role="navigation">
+									<ul>
+										<li>
+											<a class="nav-link active" href="index.html">หน้าแรก</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="about_us.html">เกี่ยวกับเรา</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="article.html">บทความ</a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="services.html">กลยุทธ์</a>
+										</li>
+										<li>
+											<a class="nav-link" href="faq.html">คำถามที่พบบ่อย </a>
+										</li>
+
+										<li>
+											<a class="nav-link" href="get_in_touch.html">ติดต่อเรา</a>
+										
+									</ul>
+								</nav>
+
+								<div id="top-bar__action" class="top-bar__action">
+									<div class="d-xl-flex flex-xl-row flex-xl-wrap align-items-xl-center">
+										<div class="top-bar__choose-lang js-choose-lang">
+											<div class="current-lang">
+												<i><img class="circled" width="25" height="25" src="img/ico/flag/0.png" alt="demo" /></i>
+												<span>TH</span>
+											</div>
+
+											<div class="list-wrap">
+												<ul class="list">
+													<li data-short-name="TH" data-img="img/ico/flag/0.png" class="is-active"><span>ภาษาไทย</span></li>
+													<li data-short-name="EN" data-img="img/ico/flag/1.png " class="is-active " href="https://www.tic-bot.com/" ><span>English</span></li>
+												
+												</ul>
+											</div>
+										</div>
+
+										<div class="top-bar__auth-btns">
+											<a  class="custom-btn custom-btn--medium custom-btn--style-2" href="https://www.tic-bot.com/">เข้าสู่ระบบ</a>
+
+											<a class="custom-btn custom-btn--medium custom-btn--style-1" href="https://www.tic-bot.com/a/register/">สมัครใช้งาน</a>
+										</div>
+
+										<div class="top-bar__side-menu-button js-side-menu-open">
+											<span class="line"></span>
+											<span class="line"></span>
+											<span class="line"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- end header -->
+
+		
+
+			<!-- start hero -->
+			<div id="start-screen" class="start-screen start-screen--full-height start-screen--style-2">
+				<div class="start-screen__bg-container">
+					<div class="start-screen__bg" style="background-image: url(img/start-screen_img/start-screen_2/bg_1.png);background-position: center bottom;"></div>
+				</div>
+			<div class="container">
+					<h1 class="hero__title"><span> blog details</span></h1>
+				</div>
+			</div>
+			<!-- end hero -->
+
+			<!-- start main -->
+			<main role="main">
+				<!-- Common styles
+				================================================== -->
+				<link rel="stylesheet" href="css/style.min.css" type="text/css">
+
+				<!-- Load lazyLoad scripts
+				================================================== -->
+				<script>
+					(function(w, d){
+						var m = d.getElementsByTagName('main')[0],
+							s = d.createElement("script"),
+							v = !("IntersectionObserver" in w) ? "8.17.0" : "11.0.6",
+							o = {
+								elements_selector: ".lazy",
+								threshold: 500,
+								callback_enter: function (element) {
+
+								},
+								callback_load: function (element) {
+
+								},
+								callback_set: function (element) {
+
+									oTimeout = setTimeout(function ()
+									{
+										clearTimeout(oTimeout);
+
+										AOS.refresh();
+									}, 1000);
+								},
+								callback_error: function(element) {
+									element.src = "https://placeholdit.imgix.net/~text?txtsize=21&txt=Image%20not%20load&w=200&h=200";
+								}
+							};
+						s.type = 'text/javascript';
+						s.async = false; // This includes the script as async. See the "recipes" section for more information about async loading of LazyLoad.
+						s.src = "https://cdn.jsdelivr.net/npm/vanilla-lazyload@" + v + "/dist/lazyload.min.js";
+						m.appendChild(s);
+						// m.insertBefore(s, m.firstChild);
+						w.lazyLoadOptions = o;
+					}(window, document));
+				</script>
+
+				<!-- start section -->
+				<section class="section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-lg-8 col-xl-9">
+								<div class="content-container">
+									<!-- start posts -->
+									<div class="posts">
+										<div class="__item">
+											<img class="img-fluid lazy" width="878" height="586" src="img/blank.gif" data-src="img/blog/06.jpeg" alt="demo" />
+
+										
+													
+												</div>
+											</div>
+
+											<h3>
+												"TREND POWER BOT"
+											</h3>
+
+											<p>
+												เข้า-ออกตามระบบ รันเทรนใน TF เล็ก เหมาะกับสาย รันเทรน แบบจบไวต้อง "TREND POWER BOT"
+												<br>
+												บอทสำหรับสายรันเทรนด์
+TREND POWER BOT
+
+เป็นบอทสำหรับตลาดที่เป็นเทรนด์เล็กๆ Run Trend ในกรอบโดยมีตัวกรองผสมอย่าง EMA เข้าไปเพื่อนำทางว่า หากเป็นเทรนด์ขาขึ้นก็จะเข้าเฉพาะ Order Buy หากเป็นเทรนด์ขาลงก็จะเข้าเฉพาะ Order Sell มีให้เลือก TF 1H
+											</p>
+
+											
+
+														</div>
+													</div>
+												</div>
+												<!-- end item -->
+
+												
+
+							
+									
+				</section>
+				<!-- end section -->
+			</main>
+			<!-- end main -->
+
+				<!-- start footer -->
+	<footer class="footer footer--s4 footer--color-light">
+		<div class="footer__line footer__line--first">
+			<div class="container">
+				<div class="row">
+					<div class="col- col-md-4 col-lg-4">
+						<div class="footer__item">
+							<a class="footer__logo site-logo" href="index.html">
+								<img class="img-fluid lazy" src="img/blank.gif" data-src="img/ticbot final 1-01.png" width="159" height="45" alt="demo" />
+							
+								
+								
+							</a>
+						</div>
+
+						<div class="footer__item">
+							<!-- start social buttons -->
+							<div class="s-btns s-btns--md s-btns--light s-btns--rounded">
+								<ul class="d-flex flex-row flex-wrap align-items-center">
+								
+								</ul>
+							</div>
+							<!-- end social buttons -->
+						</div>
+
+						<div class="footer__item">
+							<span class="__copy">Copyrights 2022 ©TICBOT</a></span>
+						</div>
+						
+					</div>
+
+					
+					<div class="col-12 col-md-7 col-lg-4">
+						<div class="footer__item">
+							<a href="term.html">Term and Condition </a>
+							<h4 class="footer__item__title">Support & Downloads</h4>
+
+							<p class="mb-3">Vendace surfperch carpsucker surgeonfish streamer Devario gray reef shark forehead</p>
+							
+							
+							<div class="store-btns store-btns--light">
+								<ul class="d-flex flex-row flex-wrap align-items-center">
+									<li>
+										<a href="https://play.google.com/store/apps/details?id=com.binance.dev&hl=en&gl=US">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.995 511.995" width="25" height="30"><path d="M98.102 6.525c-13.19-7.94-28.91-8.65-42.62-2.04l229.87 230.36 75.16-75.51L98.102 6.525zm-63.74 19.28a46.845 46.845 0 0 0-4.46 20v421.38c0 7.06 1.57 13.79 4.5 19.8l229.78-230.87-229.82-230.31zm251.021 251.55l-229.5 230.59c6.09 2.82 12.57 4.05 19.04 4.05 7.99 0 15.96-1.91 23.18-6.25l262.46-153.04-75.18-75.35zm175.07-59.82c-.09-.06-.19-.12-.28-.17l-72.86-42.43-80.77 81.15 80.82 80.99s73-42.56 73.09-42.61c13.55-8.23 21.64-22.61 21.64-38.47s-8.09-30.24-21.64-38.46z"/></svg>
+											<span>Binance<br><strong>Google Play</strong></span>
+										</a>
+									</li>
+
+									<li>
+										<a href="https://apps.apple.com/th/app/binance-buy-bitcoin-securely/id1436799971">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 305" width="25" height="30"><path d="M40.738 112.119c-25.785 44.745-9.393 112.648 19.121 153.82C74.092 286.523 88.502 305 108.239 305c.372 0 .745-.007 1.127-.022 9.273-.37 15.974-3.225 22.453-5.984 7.274-3.1 14.797-6.305 26.597-6.305 11.226 0 18.39 3.101 25.318 6.099 6.828 2.954 13.861 6.01 24.253 5.815 22.232-.414 35.882-20.352 47.925-37.941 12.567-18.365 18.871-36.196 20.998-43.01l.086-.271a2.5 2.5 0 0 0-1.328-3.066c-.032-.015-.15-.064-.183-.078-3.915-1.601-38.257-16.836-38.618-58.36-.335-33.736 25.763-51.601 30.997-54.839l.244-.152a2.498 2.498 0 0 0 .71-3.511c-18.014-26.362-45.624-30.335-56.74-30.813a50.043 50.043 0 0 0-4.95-.242c-13.056 0-25.563 4.931-35.611 8.893-6.936 2.735-12.927 5.097-17.059 5.097-4.643 0-10.668-2.391-17.645-5.159-9.33-3.703-19.905-7.899-31.1-7.899-.267 0-.53.003-.789.008-26.03.383-50.626 15.275-64.186 38.859z"/><path d="M212.101.002c-15.763.642-34.672 10.345-45.974 23.583-9.605 11.127-18.988 29.679-16.516 48.379a2.499 2.499 0 0 0 2.284 2.164c1.064.083 2.15.125 3.232.126 15.413 0 32.04-8.527 43.395-22.257 11.951-14.498 17.994-33.104 16.166-49.77a2.515 2.515 0 0 0-2.587-2.225z"/></svg>
+											<span>Binance<br><strong>App Store</strong></span>
+										</a>
+									</li>
+									
+								</ul>
+							</div>
+							
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+
+		<div class="footer__waves-container">
+			<svg class="footer__wave js-wave" data-wave='{"height": 40, "bones": 5, "amplitude": 70, "color": "rgba(78, 111, 136, 0.14)", "speed": 0.3}' width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path class="wave-1" d=""/></svg>
+
+			<svg class="footer__wave js-wave" data-wave='{"height": 60, "bones": 6, "amplitude": 90, "color": "rgba(78, 111, 136, 0.14)", "speed": 0.35}' width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs></defs><path class="wave-2" d=""/></svg>
+		</div>
+	</footer>
+	<!-- end footer -->
+</div>
+
+<div id="btn-to-top-wrap">
+	<a id="btn-to-top" class="circled" href="javascript:void(0);" data-visible-offset="800"></a>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-2.2.4.min.js"><\/script>')</script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="js/main.min.js"></script>
+
+</body>
+</html>
